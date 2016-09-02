@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @agenda.title
+%p
+  %b Start at:
+  = @agenda.start_at
+%p
+  %b End at:
+  = @agenda.end_at
+
+= link_to 'Edit', edit_agenda_path(@agenda)
+\|
+= link_to 'Back', agendas_path

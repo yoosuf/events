@@ -1,0 +1,36 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @person.first_name
+%p
+  %b Last name:
+  = @person.last_name
+%p
+  %b Email:
+  = @person.email
+%p
+  %b Phone country:
+  = @person.phone_country
+%p
+  %b Phone number:
+  = @person.phone_number
+%p
+  %b Verification method:
+  = @person.verification_method
+%p
+  %b Verified:
+  = @person.verified
+%p
+  %b Verification code:
+  = @person.verification_code
+%p
+  %b Verification token:
+  = @person.verification_token
+%p
+  %b Verified at:
+  = @person.verified_at
+
+= link_to 'Edit', edit_person_path(@person)
+\|
+= link_to 'Back', people_path
